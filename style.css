@@ -1,8 +1,7 @@
 /* Styles for wrapping the search box */
 
 .main {
-    width: 50%;
-    margin: 50px auto;
+    width: 75%;
 }
 
 /* Bootstrap 4 text input with search icon */
