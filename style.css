@@ -22,3 +22,20 @@
     pointer-events: none;
     color: #aaa;
 }
+
+.block-container {
+    display: flex;
+}
+
+.block-container div {
+    padding: 20px;
+}
+
+.block-container p {
+    padding: 25px
+}
+
+h1 {
+    padding: 30px;
+    text-align: center;
+}

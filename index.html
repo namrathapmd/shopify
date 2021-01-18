@@ -14,22 +14,25 @@
 
 <body>
     <h1>The Shoppies</h1>
-    <div class="main">
-        <p>Movie Title</p>
-        <!-- Actual search box -->
-        <div class="form-group has-search">
-            <span class="fa fa-search form-control-feedback"></span>
-            <input id="movie" type="search" class="form-control" placeholder="type movie title and press enter">
-            <div id="movies">
+    <div class="main container">
+        <div class="row block-container">
+            <p>Movie Title</p>
+            <div class="form-group has-search col-9">
+                <span class="fa fa-search form-control-feedback"></span>
+                <input id="movie" type="search" class="form-control" placeholder="type movie title and press enter">
+            </div>
+            <div class="col-6">
+                <h4>Results</h4>
+                <div id="movies"></div>
+            </div>
+            <div class="col-6" id="nomination-container">
+                <h4>Nominations</h4>
+                <div id=nominations>
+                </div>
             </div>
         </div>
     </div>
-    <div id="nomination-container">
-        <h4>Nominations</h4>
-        <div id=nominations>
 
-        </div>
-    </div>
 
     <script src="shopify.js"></script>
 </body>
