@@ -10,10 +10,10 @@ movieName.addEventListener("keyup", function (event) {
         fetch(`http://www.omdbapi.com/?apikey=db760793&t=${movieName.value}`)
             .then(response => response.json())
             .then(data => {
-                movies.innerHTML = `
+                movies.innerHTML = data.Title !== undefined ? `
                 <li> ${data.Title} (${data.Year})
                 <button id="nominate" onclick="nominateMovie('${data.Title}','${data.Year}')">Nominate</button>
-                </li>`
+                </li>` : `No results found for '${movieName.value}'`
             });
     }
 
