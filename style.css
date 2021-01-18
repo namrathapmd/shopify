@@ -8,7 +8,7 @@
 /* Bootstrap 4 text input with search icon */
 
 .has-search .form-control {
-    padding-left: 2.375rem;
+    /*padding-left: 2.375rem;*/
 }
 
 .has-search .form-control-feedback {
@@ -38,4 +38,11 @@
 h1 {
     padding: 30px;
     text-align: center;
+}
+#nomination-container {
+  border-left: solid 1px lightgrey;
+  min-height: 50vh;
+}
+#result-container {
+  min-height: 50vh;
 }
